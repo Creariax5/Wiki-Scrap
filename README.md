@@ -2,6 +2,9 @@
 
 A tool that crawls Wikipedia pages starting from a user-defined entry point, collecting links and content to build a knowledge graph visualization. The project transforms Wikipedia's interconnected pages into an explorable network visualization resembling a neural network.
 
+![image](https://github.com/user-attachments/assets/4db1bb93-56ba-4016-ac02-bb5948c21d25)
+
+
 ## Features
 
 - **Recursive Web Scraping**: Starts from a user-defined Wikipedia page and recursively follows links to build a comprehensive dataset
@@ -91,4 +94,18 @@ Florian Demartini - florian.demartini.dev@gmail.com
 Scrap data from wikipedia
 
 starts with the page defined by the user and continues to infinity starting with the nearest pages
+
+
+
+
+
+
+
+
+
+
+
+## Galery
+![image](https://github.com/user-attachments/assets/000ab363-b2d0-41f5-a897-774982861b22)
+
 
