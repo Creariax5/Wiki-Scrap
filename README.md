@@ -1,21 +1,94 @@
+# Wikipedia Knowledge Graph Builder
+
+A tool that crawls Wikipedia pages starting from a user-defined entry point, collecting links and content to build a knowledge graph visualization. The project transforms Wikipedia's interconnected pages into an explorable network visualization resembling a neural network.
+
+## Features
+
+- **Recursive Web Scraping**: Starts from a user-defined Wikipedia page and recursively follows links to build a comprehensive dataset
+- **Data Collection**: 
+  - Extracts all links from each page
+  - Downloads complete HTML content
+  - Converts HTML to Markdown for better readability
+  - Generates CSV files containing page relationships
+- **Interactive Visualization**:
+  - Brain-like network graph implemented in Java
+  - Visual representation of page connections
+  - Intuitive navigation through the knowledge graph
+
+## Getting Started
+
+### Prerequisites
+
+- Java Development Kit (JDK)
+- Required Python packages (if using Python for scraping)
+- Network connection for Wikipedia access
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/wiki-knowledge-graph.git
+cd wiki-knowledge-graph
+```
+
+2. Install dependencies (if using Python for scraping):
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+1. Start the scraper with your chosen Wikipedia page:
+```bash
+python scraper.py --start-page "Your_Wikipedia_Page_Title"
+```
+
+2. Run the visualization:
+```bash
+cd visualization/java
+javac GraphVisualizer.java
+java GraphVisualizer
+```
+
+## Data Format
+
+### CSV Structure
+The CSV files contain the following information:
+- Source page
+- Target page
+- Link type
+- Additional metadata
+
+### Visualization Features
+- Node size represents page importance
+- Edge thickness shows connection strength
+- Interactive zooming and panning
+- Node clustering for related topics
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Wikipedia for providing the vast knowledge base
+- Contributors and maintainers
+- Open source community for inspiration and tools
+
+## Contact
+
+Florian Demartini - florian.demartini.dev@gmail.com
+
 # Wiki-Scrap
 Scrap data from wikipedia
 
 starts with the page defined by the user and continues to infinity starting with the nearest pages
-
-Console:
-![image](https://user-images.githubusercontent.com/63298524/233432556-681e9b57-f42e-43af-b59d-3d63b041f6f5.png)
-
-in csv all the links by page:
-![image](https://user-images.githubusercontent.com/63298524/233432796-73960292-7ba1-4750-bce3-0e4b44c6ed97.png)
-
-HTML content downloaded:
-![image](https://user-images.githubusercontent.com/63298524/233432940-fbae04a6-8249-4bac-889d-53789178b206.png)
-
-And html files converted to md:
-![image](https://user-images.githubusercontent.com/63298524/233433072-88d921c1-0737-40bc-9b36-4725f323ffc9.png)
-
-In java folder you can find my own graphic vue of csv file. It like a brain:
-![image](https://user-images.githubusercontent.com/63298524/233433376-f338f5c4-6f78-4a38-aa1c-b6be0998e1b6.png)
-
 
